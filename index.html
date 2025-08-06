@@ -198,7 +198,430 @@
 
 
 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los salarios de Dafne y Ana Belen + Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e1bee7, #b2ebf2); /* Fondo color degradado */
+      margin: 0;
+      padding: 0;
+    }
 
+    .container {
+      background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente */
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h3 {
+      text-align: center;
+      color: #4a148c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ce93d8;
+      color: #fff;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .btn-container button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #ba68c8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-container button.active,
+    .btn-container button:hover {
+      background-color: #9c27b0;
+    }
+
+    .calculator {
+      margin-top: 40px;
+    }
+
+    .screen {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.2rem;
+      border: 2px solid #9c27b0;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .button {
+      padding: 15px;
+      font-size: 1.1rem;
+      border: none;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button.operator {
+      background-color: #ec407a;
+    }
+
+    .button.clear {
+      background-color: #ff5252;
+    }
+
+    .button.equals {
+      background-color: #26c6da;
+    }
+
+    .button:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Valor</th>
+          <th>Nombre</th>
+          <th>Valor</th>
+          <th>Fecha</th>
+          <th>Video Personalizado</th>
+          <th>Minutos</th>
+          <th>Método de Pago</th>
+          <th>ENVIADO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>7.00</td>
+          <td>Ana</td>
+          <td>1.50</td>
+          <td>07/24/2025</td>
+          <td>VIDEO PERSONALIZADO</td>
+          <td>5 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+<tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>7.00</td>
+          <td>Ana</td>
+          <td>3.00</td>
+          <td>07/25/2025</td>
+          <td>VIDEO PERSONALIZADO</td>
+          <td>7 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+      <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>25.00</td>
+          <td>Ana</td>
+          <td>0.00</td>
+          <td>07/27/2025</td>
+          <td>VIDEO PERSONALIZADO</td>
+          <td>5 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+
+<tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>7.00</td>
+          <td>Ana</td>
+          <td>3.00</td>
+          <td>08/02/2025</td>
+          <td>LLAMADAVIDEO</td>
+          <td>7 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+
+<tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>7.00</td>
+          <td>Ana</td>
+          <td>3.00</td>
+          <td>08/02/2025</td>
+          <td>LLAMADAVIDEO</td>
+          <td>7 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>5.00</td>
+          <td>Ana</td>
+          <td>1.00</td>
+          <td>08/3/2025</td>
+          <td>LLAMADAVIDEO</td>
+          <td>7 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+            <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>5.00</td>
+          <td>Ana</td>
+          <td>1.00</td>
+          <td>08/3/2025</td>
+          <td>LLAMADAVIDEO</td>
+          <td>7 MINUTOS</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+      
+            <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>5.00</td>
+          <td>Ana</td>
+          <td>0.00</td>
+          <td>08/5/2025</td>
+          <td>PROPINA DE LUIS </td>
+          <td>0</td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+            <tbody>
+        <tr>
+          <td>Dafne</td>
+          <td>10.00</td>
+          <td>Ana</td>
+          <td>0.00</td>
+          <td>08/6/2025</td>
+          <td>VIDEO PERSONALIZADO </td>
+          <td>5 MINUTOS </td>
+          <td>PAYPAL</td>
+          <td>LISTO</td>
+        </tr>
+      </tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+  </div>
+
+  <h1>DAFNE GANA 78 DOLARES </h1>
+
+  <h1>Ganancias y Porcentajes</h1>
+
+  <div class="btn-container">
+    <button data-index="0" class="active">5 dólares</button>
+    <button data-index="1">10 dólares</button>
+    <button data-index="2">15 dólares</button>
+    <button data-index="3">20 dólares</button>
+    <button data-index="4">30 dólares</button>
+    <button data-index="5">40 dólares</button>
+  </div>
+
+  <div class="table-responsive">
+    <table aria-label="Tabla de ganancias y porcentajes">
+      <thead>
+        <tr>
+          <th>Persona</th>
+          <th>Ganancia (USD)</th>
+          <th>Porcentaje (%)</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body"></tbody>
+    </table>
+  </div>
+
+  <div class="calculator">
+    <input type="text" class="screen" id="screen" disabled />
+    <div class="buttons">
+      <button class="button clear" onclick="clearScreen()">C</button>
+      <button class="button operator" onclick="appendToScreen('/')">/</button>
+      <button class="button operator" onclick="appendToScreen('*')">*</button>
+      <button class="button operator" onclick="appendToScreen('-')">-</button>
+      <button class="button" onclick="appendToScreen('7')">7</button>
+      <button class="button" onclick="appendToScreen('8')">8</button>
+      <button class="button" onclick="appendToScreen('9')">9</button>
+      <button class="button operator" onclick="appendToScreen('+')">+</button>
+      <button class="button" onclick="appendToScreen('4')">4</button>
+      <button class="button" onclick="appendToScreen('5')">5</button>
+      <button class="button" onclick="appendToScreen('6')">6</button>
+      <button class="button equals" onclick="calculate()">=</button>
+      <button class="button" onclick="appendToScreen('1')">1</button>
+      <button class="button" onclick="appendToScreen('2')">2</button>
+      <button class="button" onclick="appendToScreen('3')">3</button>
+      <button class="button" onclick="appendToScreen('0')">0</button>
+      <button class="button" onclick="appendToScreen('.')">.</button>
+      <button class="button operator" onclick="calculatePercentage()">%</button>
+    </div>
+  </div>
+
+  <h3>Ana responsable de la venta de los pies de Dafne Castillo.</h3>
+</div>
+
+<script>
+  const dataSets = [
+    [ { persona: "Dafne Castillo", ganancia: 3, porcentaje: "75%" }, { persona: "Ana", ganancia: 1, porcentaje: "25%" } ],
+    [ { persona: "Dafne Castillo", ganancia: 7.5, porcentaje: "75%" }, { persona: "Ana", ganancia: 2.5, porcentaje: "25%" } ],
+    [ { persona: "Dafne Castillo", ganancia: 11.25, porcentaje: "75%" }, { persona: "Ana", ganancia: 3.75, porcentaje: "25%" } ],
+    [ { persona: "Dafne Castillo", ganancia: 15, porcentaje: "75%" }, { persona: "Ana", ganancia: 5, porcentaje: "25%" } ],
+    [ { persona: "Dafne Castillo", ganancia: 22.5, porcentaje: "75%" }, { persona: "Ana", ganancia: 7.5, porcentaje: "25%" } ],
+    [ { persona: "Dafne Castillo", ganancia: 30, porcentaje: "75%" }, { persona: "Ana", ganancia: 10, porcentaje: "25%" } ]
+  ];
+
+  const tablaBody = document.getElementById('tabla-body');
+  const buttons = document.querySelectorAll('.btn-container button');
+
+  function renderTable(index) {
+    tablaBody.innerHTML = "";
+    dataSets[index].forEach(({ persona, ganancia, porcentaje }) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${persona}</td><td>${ganancia}</td><td>${porcentaje}</td>`;
+      tablaBody.appendChild(row);
+    });
+    buttons.forEach(btn => btn.classList.remove('active'));
+    buttons[index].classList.add('active');
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      renderTable(parseInt(btn.dataset.index));
+    });
+  });
+
+  renderTable(0);
+
+  function appendToScreen(value) {
+    const screen = document.getElementById('screen');
+    screen.value += value;
+  }
+
+  function clearScreen() {
+    document.getElementById('screen').value = '';
+  }
+
+  function calculate() {
+    const screen = document.getElementById('screen');
+    try {
+      const result = eval(screen.value);
+      screen.value = result;
+    } catch {
+      screen.value = 'Error';
+    }
+  }
+
+  function calculatePercentage() {
+    const screen = document.getElementById('screen');
+    const value = parseFloat(screen.value);
+    screen.value = !isNaN(value) ? value / 100 : 'Error';
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -226,7 +649,7 @@
             <td>$10.00</td>
             <td>Michel</td>
             <td>0</td>
-            <td>05/10/2025</td>
+            <td>06/10/2025</td>
             <td>VIDEOLLAMADA</td>
             <td>10 minutos</td>
             <td>PAYPAL</td>
@@ -238,7 +661,7 @@
             <td>$10.00</td>
             <td>Michel</td>
             <td>0</td>
-            <td>05/19/2025</td>
+            <td>06/19/2025</td>
             <td>VIDEO PERSONALIZADO </td>
             <td>5 minutos</td>
             <td>PAYPAL</td>
@@ -250,22 +673,43 @@
             <td>$30.00</td>
             <td>Michel</td>
             <td>0</td>
-            <td>05/19/2025</td>
+            <td>06/19/2025</td>
             <td>3 VIDEO PERSONALIZADO DE BONDAGE </td>
             <td>4 minutos</td>
             <td>PAYPAL</td>
             <td>LISTO</td>
         </tr>
 
-
+ <tr>
+            <td>Dafne</td>
+            <td>$10.00</td>
+            <td>Michel</td>
+            <td>0</td>
+            <td>06/21/2025</td>
+            <td>LLAMADAVIDEO</td>
+            <td>10 minutos</td>
+            <td>PAYPAL</td>
+            <td>LISTO</td>
+        </tr>
       
+        <tr>
+            <td>Dafne</td>
+            <td>$10.00</td>
+            <td>Michel</td>
+            <td>0</td>
+            <td>06/23/2025</td>
+            <td>LLAMADAVIDEO</td>
+            <td>10 minutos</td>
+            <td>PAYPAL</td>
+            <td>LISTO</td>
+        </tr>
 
           
          
     </tbody>
 </table>
 
-<h3>DAFNE TIENE 50 DOLARES</h3>
+<h3>DAFNE TIENE 70 DOLARES</h3>
 <h3>MICHEL TIENE 0</h3>
 
 
